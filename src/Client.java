@@ -9,27 +9,36 @@ public class Client {
         this.sortingMethods = new ISortMethod[]{new BubbleSort(), new QuickSort(), new MergeSort()};
     }
 
-    public static void main(String[] args) {
-        Client client = new Client();
+    // The client showcase
+    public void run() {
         Scanner in = new Scanner(System.in);
         System.out.println("Welcome to Braeden Hunt's Inventory Manager!");
         while (true) {
+            // Display UI
             System.out.println("-------------------------------------------------");
-            System.out.println("You have a " + client.inventoryModule.inventoryName + ".");
-            System.out.println("You have " + client.sortingMethods.length + " way(s) to sort it.");
+            System.out.println("You have a " + this.inventoryModule.inventoryName + ".");
+            System.out.println("You have " + this.sortingMethods.length + " way(s) to sort it.");
             System.out.println("0) Currently Set Method");
-            for (int i = 0; i < client.sortingMethods.length; i++) {
-                System.out.println(i + 1 + ") " + client.sortingMethods[i].getClass().getCanonicalName());
+
+            // Display sorting methods
+            for (int i = 0; i < this.sortingMethods.length; i++) {
+                System.out.println(i + 1 + ") " + this.sortingMethods[i].getClass().getCanonicalName());
             }
+
+            // Get selection
             System.out.print("Selection: ");
             int selection = in.nextInt();
-            if (selection < 0 || selection > client.sortingMethods.length) {
+            if (selection < 0 || selection > this.sortingMethods.length) {
                 System.out.print("Invalid selection: performing currently selected method by default.1");
             }
+
+            // Set the sorting method to the selection
             if (selection != 0) {
-                client.inventoryModule.setSortMethod(client.sortingMethods[selection - 1]);
+                this.inventoryModule.setSortMethod(this.sortingMethods[selection - 1]);
             }
-            client.inventoryModule.performSort();
+
+            // Perform the sort
+            this.inventoryModule.performSort();
         }
     }
 }

@@ -1,0 +1,45 @@
+Welcome to Braeden Hunt's Inventory Manager!
+-------------------------------------------------
+You have a Basic Inventory.
+You have 3 way(s) to sort it.
+0) Currently Set Method
+1) BubbleSort
+2) QuickSort
+3) MergeSort
+Selection: 0
+Performing Bubble Sort
+-------------------------------------------------
+You have a Basic Inventory.
+You have 3 way(s) to sort it.
+0) Currently Set Method
+1) BubbleSort
+2) QuickSort
+3) MergeSort
+Selection: 1
+Performing Bubble Sort
+-------------------------------------------------
+You have a Basic Inventory.
+You have 3 way(s) to sort it.
+0) Currently Set Method
+1) BubbleSort
+2) QuickSort
+3) MergeSort
+Selection: 3
+Performing Merge Sort
+-------------------------------------------------
+You have a Basic Inventory.
+You have 3 way(s) to sort it.
+0) Currently Set Method
+1) BubbleSort
+2) QuickSort
+3) MergeSort
+Selection: 2
+Performing Quick Sort
+-------------------------------------------------
+You have a Basic Inventory.
+You have 3 way(s) to sort it.
+0) Currently Set Method
+1) BubbleSort
+2) QuickSort
+3) MergeSort
+Selection: CTRL + C
